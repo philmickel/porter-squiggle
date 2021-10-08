@@ -21,7 +21,7 @@ phi, theta = np.meshgrid(np.linspace(0, np.pi*2, resolution), np.linspace(0, np.
 xypairs = np.dstack([phi, theta]).reshape(-1, 2)
 
 
-XYZtuples = np.zeros((xypairs.shape[0], 3))
+xyz_coords = np.zeros((xypairs.shape[0], 3))
 
 #this is the scribble algorithm. 
 #while scanning over each ordered pair of phi and theta, convert to cartesian coordinates
